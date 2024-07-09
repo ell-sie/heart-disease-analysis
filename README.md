@@ -18,7 +18,35 @@ The dataset used in this analysis is the Heart Disease dataset from the UCI Mach
 
 ## Results
 
-The analysis results include clustering performance metrics such as the Silhouette Score and Davies-Bouldin Index for each of the clustering algorithms used. Visualizations generated using PCA and t-SNE provide insights into the clusters formed by each algorithm.
+## Results
+
+The analysis results include clustering performance metrics such as the Silhouette Score and Davies-Bouldin Index for each of the clustering algorithms used. 
+
+### Performance Metrics
+
+- **K-means:**
+  - Silhouette Score: 0.1268
+  - Davies-Bouldin Index: 2.5833
+- **Hierarchical Clustering:**
+  - Silhouette Score: 0.1017
+  - Davies-Bouldin Index: 2.8409
+- **DBSCAN:**
+  - Did not create enough clusters for evaluation
+- **Gaussian Mixture Models (GMM):**
+  - Silhouette Score: 0.0687
+  - Davies-Bouldin Index: 2.8767
+
+### Visualizations
+
+Visualizations generated using PCA and t-SNE provide insights into the clusters formed by each algorithm.
+
+## Conclusions
+
+- **K-means clustering** performed the best among the algorithms tested based on both the Silhouette Score and the Davies-Bouldin Index.
+- Hierarchical clustering and GMM had lower performance scores compared to K-means.
+- DBSCAN did not produce enough clusters, suggesting that either further tuning of its parameters is necessary, or it might not be suitable for this dataset.
+
+The analysis shows that K-means is the most effective clustering algorithm for identifying patients with high risk of developing heart disease based on the given dataset.
 
 ## Repository Structure
 
